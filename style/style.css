@@ -565,4 +565,63 @@ body {
         display: flex;
     }
 }
-        
+/* Responsive layout: Tablet & Mobile */
+@media (max-width: 992px) {
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .tea-cup {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+  }
+
+  .cafe-illustration {
+    width: 250px;
+    height: 250px;
+    font-size: 4rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .btn-primary {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+
+  .menu-section h2,
+  .about-text h2,
+  .gallery-section h2,
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
